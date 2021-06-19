@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+ .body{
+     background: url("../background-texture-bright-emerald-green-snake-skin_158518-4412.jpg");
+     background-size:  100vw 100vh;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+#scoreBox{
+    position: absolute;
+    top:9px;
+    right: 150px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top:100px;
+    right: 120px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Architects Daughter', cursive;
+    
+}
+ 
+#board{
+    background: linear-gradient(rgb(147, 216, 255), rgb(253, 253, 143));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    /* snake's head will be red coloured */
+    background: linear-gradient(rgb(158, 100, 224), rgb(223, 14, 14));
+    border: 2px solid purple;
+    border-radius: 9px;
+    transform: scale(1.02); /*to increase by 2%*/
+}
+.snake{
+    /* snake's body will be purple coloured */
+    background: linear-gradient(purple, white);
+    border: .25vmin solid rgb(102, 25, 173);
+    border-radius: 12px; /*gives a round shape within the square  */
+}
+
+.food{
+    background: linear-gradient(rgb(49, 214, 118), rgb(37, 37, 199));
+    border: .25vmin solid black;
+    border-radius: 13px;
+
+}
